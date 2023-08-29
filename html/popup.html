@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        width: 400px;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 13px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      #settings {
+        float: left;
+        margin-top: -1px;
+        font-size: 12px;
+      }
+      #settings a {
+        font-weight: bold;
+      }
+      #settings a:hover {
+        text-decoration: underline;
+      }
+      #data {
+        margin-top: 10px;
+      }
+      #table_div {
+        margin-top: 15px;
+      }
+      .active {
+        font-weight: bold;
+      }
+      #nodata {
+        display: none;
+        color: red;
+        font-weight: bold;
+      }
+      #nodata a {
+        text-decoration: underline;
+        color: red;
+      }
+    </style>
+
+    <!-- Load the API -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="..\Js\popup.js"></script>
+  </head>
+
+  <body>
+    <div id="settings">
+      <a id="options" href="#">Options</a>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="data">
+      <span id="nodata">Start browsing to collect usage data.</span>
+      <div id="chart_div"></div>
+      <div id="table_div"></div>
+    </div>
+  </body>
+</html>

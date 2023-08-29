@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Tracker Options</title>
+    <link rel="stylesheet" href="..\css\options.css" />
+    <script src="..\Js\options.js"></script>
+    <style type="text/css">
+      td {
+        text-align: center; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="options-table">
+      <table>
+        <tbody class="table">
+          <tr>
+            <td>
+              <b>Time Limit for a Day</b><br/>
+              (Notification will be displayed when this total time is crossed during the day) <br/>
+              (Please note that you have to specifically type zero in the box,<br/>
+                you cannot keep it blank if you want zero)
+            </td>
+            <td style="text-align : left">
+              <input id="daily_limit_hr" type="text" size="1" maxlength="2"/>
+              hr :
+              <input id="daily_limit_min" type="text" size="1" maxlength="2"/>
+              min :
+              <input id="daily_limit_sec" type="text" size="1" maxlength="2"/>
+              sec
+            </td>
+          </tr>
+          <tr>
+            <td><b>Chart Display Limit</b></td>
+            <td style="text-align : left">
+              Show Top
+              <input id="chart_limit" type="text" size="1" maxlength="2" />
+              Sites
+            </td>
+          </tr>
+          <tr>
+            <td><b>Clear Storage Data</b></td>
+            <td style="text-align : left">
+              <button id="clear-data">Clear Data</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="save-button">Save Changes</button>
+              <span id="status"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

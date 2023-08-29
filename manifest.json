@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Time Tracker",
+  "version": "1.0",
+  "description":"Tracks the total time of your visit on various websites",
+  "icons": {
+    "128": "Images/icon128.png",
+    "48": "Images/icon48.png",
+    "16": "Images/icon16.png"
+},
+  "browser_action": {
+    "default_icon": "Images/icon16.png",
+    "default_popup": "html/popup.html",
+    "default_title": "Time Tracker"
+  },
+  "background": {
+      "scripts": ["Js/eventPage.js"]
+  },
+  "permissions": [
+      "idle",
+      "tabs",
+      "notifications"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com; object-src 'self'"
+
+}  
